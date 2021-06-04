@@ -15,7 +15,7 @@ namespace mysnake
         private int _height;
         private int _sizesnake;
 
-        public Map(int width, int height, int sizesnake, Panel controlPanel)
+        public Map(int width, int height, int sizesnake, Control controlPanel)
         {
             _width = width;
             _height = height;
@@ -25,7 +25,7 @@ namespace mysnake
             CreateMap(controlPanel);
         }
 
-        public void CreateMap(Panel panel)
+        public void CreateMap(Control panel)
         {
             for (int i = 0; i <= _width / _sizesnake; i++)
             {
